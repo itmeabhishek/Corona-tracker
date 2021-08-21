@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  font-family:"Montserrat", sans-serif;
+}
+.App {
+  text-align: center;
+  /* background-color: #161625; */
+  height: 100vh;
+  /* display: inline-flex; */
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  width: 100vw;
+  /* background-image: url("https://www.nationsonline.org/maps/India-Satellite-Map.jpg"); */
+  
+}
+.button{
+  /* display:table-cell; */
+  /* padding:30px; */
+  display:inline-flex;
+  width:100%;
+  padding-bottom:0px;
+  object-fit: contain;
+  /* margin: 10vw; */
+  height: 15vh;
+  box-shadow:rgba(0,0,0,0.25) 0px 25px 50px -12px;
+}
+.card{
+ /* margin:20%; */
+ height: 80vh;
+ width: 80vw;
+ /* display:inline-flex; */
+ align-items: center;
+ grid-template-columns: repeat(3,1fr);
+ padding: 1rem;
+ align-items:stretch;
+ display: grid;
+ gap:10px;
+ padding-top: 10vh;
+ 
+ /* max-height:700px; */
+ box-shadow:rgba(0,0,0,0.25) 0px 25px 50px -12px;
+ /* padding: 0vh 0vw !important; */
+}
+.card::-webkit-scrollbar {
+  display: none;
+}
+/* .header{  
+  background-color: whitesmoke;
+  color:black;  
+  width:100%;
+  height:15vh;
+  text-align:left ;
+  justify-content: space-around;
+  display:flex;
+  padding:10px 0;
+  position:fixed;
+  top:0;
+  justify-content: flex-start;
+  box-shadow:rgba(0,0,0,0.25) 0px 25px 50px -12px;
+} */
+/* background-color:rgba(53, 49, 49, 0.486); */
+/* .header div{
+  float:left;
+  display:block;
+  color:white;
+  align-items:center;
+  padding: 14px 20px;
+  text-decoration:none;
+} */
+/* .logo{
+  display:block;
+  margin-left:0;
+  position:relative;
+  max-height: 10vh;
+  margin: 2vh 2vw;
+  height:auto;
+}
+.header-left{
+  margin:4vh;
+}
+.header-right{
+  display:flex;
+  justify-content:space-around;
+  float:right;
+}
+.header-right > h4{
+  padding:2px;
+} */
+.wrapper {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #343436;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+}
+
+ul li a {
+  margin-left: 1.5em;
+}
+
+a.logo {
+  margin-right: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.25em;
+}
+
+a::after {
+  content:"";
+  top: 80%;
+  border-bottom: 2px solid #F8E71C;
+  transition: all 0.35s;
+  position: absolute;
+}
+
+a:hover::after {
+  transition: all 0.35s;
+}
+
+a::after {
+  right: 50%;
+  left: 50%;
+}
+
+a:hover::after {
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a.logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 0px;
+  }
+  
+  ul {
+    width: 100%;
+    margin-bottom: 1em;
+    justify-content: space-between;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+.card{
+  height: 80vh;
+ width: 80vw;
+ /* display:inline-flex; */
+ align-items: center;
+ grid-template-columns: repeat(1,1fr);
+ padding: 1rem;
+ align-items:stretch;
+ display: grid;
+ gap:10px;
+ padding-top: 10vh;
+ 
+ /* max-height:700px; */
+ box-shadow:rgba(0,0,0,0.25) 0px 25px 50px -12px;
+}
+  a.logo {
+    margin: 1.5em;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  ul li {
+    margin: 0.3em;
+    text-align: center;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
